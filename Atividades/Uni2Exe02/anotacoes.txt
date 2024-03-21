@@ -1,0 +1,12 @@
+
+Em Java, os tipos de dados têm uma ordem de precedência que é usada em certas situações, 
+como na promoção automática de tipos em expressões. 
+Aqui está a ordem de precedência dos tipos primitivos em Java, do mais baixo para o mais alto:
+
+1 - byte
+2 - short
+3 - int
+4 - long
+5 - float
+6 - double
+7 - String
