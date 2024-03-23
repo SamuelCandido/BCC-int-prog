@@ -6,12 +6,12 @@ public class Uni3Uri2 {
 
         Scanner scanner = new Scanner(System.in);
 
-        float n = 3.14159f;
+        float pi = 3.14159f;
 
         float raio = scanner.nextFloat();
         
-        double area = n *  Math.pow(raio, raio);
+        double area = pi *  Math.pow(raio, raio);
 
-        System.out.println("A= " + ());
+        System.out.println("A=" + area);
     }
 }
