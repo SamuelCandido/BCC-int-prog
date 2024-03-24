@@ -9,5 +9,7 @@ public class Uni3Uri1 {
         int B = scanner.nextInt();
 
         System.out.println("X = " + (A+B));
+
+        scanner.close();
     }
 }
