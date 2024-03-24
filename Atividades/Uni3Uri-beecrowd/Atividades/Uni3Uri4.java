@@ -16,7 +16,7 @@ public class Uni3Uri4 {
 
         double MEDIA = somaNota / somaPeso;
 
-        System.out.printf("A=%.5f%n", MEDIA);
+        System.out.printf("MEDIA = %.5f%n", MEDIA);
 
         scanner.close();
     }
