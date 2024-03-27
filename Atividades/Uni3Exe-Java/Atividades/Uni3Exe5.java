@@ -8,7 +8,7 @@ public class Uni3Exe5 {
             double frango = scanner.nextDouble();
 
             double aChip = 4;
-            double aComida = 3.5;
+            double aComida = 7;
 
             double aneis = aChip + aComida;
 
