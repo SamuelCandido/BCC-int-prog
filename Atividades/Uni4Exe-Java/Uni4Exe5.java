@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+
+//true e false refaz
 public class Uni4Exe5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -16,7 +18,7 @@ public class Uni4Exe5 {
         
         else if (corUpper.equals("")) {
             System.out.println();
-            System.out.println("A oque você não digitou nada, veja: " + cor + "  ANão esta vendo? Justamente...");
+            System.out.println("A oque você não digitou nada, veja: " + cor + "  A não esta vendo? Justamente...");
         }
 
         else{

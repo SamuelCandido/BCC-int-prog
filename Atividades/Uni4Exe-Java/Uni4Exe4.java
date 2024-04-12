@@ -10,9 +10,9 @@ public class Uni4Exe4 {
         int force = (int) n1;
 
         if (n1 != force) {
-            System.out.println("O número " + n1 + " tem parte fracionária.");
+            System.out.println("O número " + n1 + " tem ponto flutuante.");
         } else if (n1 == force) {
-            System.out.println("O número " + n1 + " não tem parte fracionária (é um número inteiro).");
+            System.out.println("O número " + n1 + " não tem ponto flutuante (é um número inteiro).");
         }
 
 

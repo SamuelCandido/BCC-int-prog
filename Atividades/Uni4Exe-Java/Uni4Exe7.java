@@ -21,7 +21,7 @@ public class Uni4Exe7 {
 
         else{
             double pExcedido = carta - 50;
-            double adicional = (pExcedido/20);
+            double adicional = (pExcedido/20) + 1;
             double calculo = vSelo + (vSelo * adicional);
 
             System.out.println();
