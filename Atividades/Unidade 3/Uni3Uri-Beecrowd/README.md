@@ -1,6 +1,6 @@
-# Atividades feitas pelo site Beecrowd 
+# Unidade 4: Introdução - Lista de Exercícios - atividade do Beecrowd
 ----------
-## Enunciado da Lista de Exercícios - atividadeURI 
+## Enunciados das lista das atividades feitas em java do site Beecrowd
 ----------
 
 ## Uni3Uri1.java
@@ -184,4 +184,3 @@ Imprima a quantidade mínima de notas e moedas necessárias para trocar o valor 
 Obs: Utilize ponto (.) para separar a parte decimal.
 
 ----------
-
