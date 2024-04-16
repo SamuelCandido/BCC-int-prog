@@ -28,6 +28,7 @@ public class Uni4Exe22 {
                 break;
 
             default:
+                System.out.println("Opção invalida, somente 1, 2 ou 3");
                 break;
         }
 
