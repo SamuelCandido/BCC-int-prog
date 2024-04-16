@@ -7,21 +7,23 @@ public class Uni4Exe7 {
         System.out.println("Digite o peso da carta:");
         double carta = scanner.nextDouble();
 
+        int pcarta = (int) carta;
+
         double vSelo = 0.45;
 
-        if (carta <= 50 ){
+        if (pcarta <= 50 ){
             System.out.println();
             System.out.println("O valor total do selo fica de R$" + vSelo);
         }
         
-        else if (carta <= 0){
+        else if (pcarta <= 0){
             System.out.println();
             System.out.println("Esta tentando enviar nada?");
         }
 
         else{
-            double pExcedido = carta - 50;
-            double adicional = (pExcedido/20) + 1;
+            pcarta = pcarta - 50;
+            double adicional = (pcarta/20) + 1;
             double calculo = vSelo + (vSelo * adicional);
 
             System.out.println();
