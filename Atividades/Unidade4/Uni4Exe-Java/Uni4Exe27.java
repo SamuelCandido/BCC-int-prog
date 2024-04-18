@@ -12,74 +12,76 @@ public class Uni4Exe27 {
         int hSaida = scanner.nextInt();
         int mSaida = scanner.nextInt();
 
+        int recebe1 = hEntrada * 60;
+        int recebe2 = hSaida * 60;
+        int totalHora; //Recebe resultado de permanencia e aux para calculo hora extra
+        int hPermanencia;
+        int mPermanencia;
         double calculo;
 
-        int hPermanencia = (hSaida - hEntrada);
-        int mPermanencia = (mSaida - mEntrada);
-
-        //Força as horas de permanencia ficar positiva apos calculo
-        if (hPermanencia < 0) {
-                hPermanencia = (hEntrada - hSaida);
+        //Garante que valor inicio não seja negativo e verifica tempo de permanencia
+        if (recebe1 > recebe2) {
+            totalHora = (recebe1 + mEntrada) - (recebe2 + mSaida); 
+        }
+        else{
+            totalHora = (recebe2 + mSaida) - (recebe1 + mEntrada);
         }
 
-        //Força os minutos de permanencia ficar positiva apos calculo
-        if (mPermanencia < 0) {
-            mPermanencia = (mEntrada - mSaida);
+        //Separa as horas dos minutos
+        hPermanencia = totalHora / 60;
+        mPermanencia = totalHora % 60;
+
+        //Verifica se os minutos para cobrar hora completa
+        if (mPermanencia <= 29 && hPermanencia != 0) {
+            System.out.println("pssou no 1 if");
+            if (hPermanencia >= 1 && hPermanencia <= 2) {
+                calculo =  hPermanencia * 5;
+                    System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
+            }
+
+            else if (hPermanencia >= 3 && hPermanencia <= 4) {
+                calculo =  hPermanencia * 7.50;
+                    System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
+            }
+
+            else if (hPermanencia >= 5) {
+                calculo =  hPermanencia * 10;
+                    System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
+            }
+
         }
 
-        //Define range de horas e minutos
-        if (hEntrada >=0 && hSaida >=0 && hEntrada <=24 && hSaida <=24 && mEntrada >=0 && mSaida >=0 && mEntrada <=59 && mSaida <=59) {
+        //Verifica se os minutos para cobrar hora completa
+        else if (mPermanencia >= 30 && hPermanencia != 0) {
+            totalHora = hPermanencia + 1;
 
-            //Condição que se permanencia < 30m paga 1h igual
-            if (hPermanencia == 0 && mPermanencia < 30) {
-                System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + 5.00);
+            if (totalHora >= 1 && totalHora <= 2) {
+                calculo =  totalHora * 5;
+                System.out.println("tot" + totalHora);
+                System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
             }
 
-            //Arredondamento para baixo
-            else if (mPermanencia >= 0 && mPermanencia <= 29 ) {
-        
-                if (hPermanencia >= 1 && hPermanencia <= 2) {
-                    calculo =  hPermanencia * 5;
+            else if (totalHora >= 3 && totalHora <= 4) {
+                calculo =  totalHora * 7.50;
                     System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
-                }
-
-                else if (hPermanencia >= 3 && hPermanencia <= 4) {
-                    calculo =  hPermanencia * 7.50;
-                    System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
-                }
-
-                else if (hPermanencia >= 5) {
-                    calculo =  hPermanencia * 10;
-                    System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
-                }
-
             }
 
-            //Arredondamento para cima
-            else if (mPermanencia >= 30) {
-
-                if (hPermanencia >= 1 && hPermanencia <= 2) {
-                    calculo =  (hPermanencia + 1) * 5;
+            else if (totalHora >= 5) {
+                calculo =  totalHora * 10;
                     System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
-                }
+            }
 
-                else if (hPermanencia >= 3 && hPermanencia <= 4) {
-                    calculo =  (hPermanencia + 1) * 7.50;
-                    System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
-                }
+        }
 
-                else if (hPermanencia >= 5) {
-                    calculo =  (hPermanencia + 1) * 10;
-                    System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
-                }
-            }    
-
+        else if (hPermanencia <= 0) {
+            hPermanencia = 00;//Garante que as horas não sejam negativas
+            System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + 5.00);
         }
 
         else{
-            System.out.println("As horas e os minutos tem que estar dentro do range h(0-24) e m(0-59)");
+            System.out.println("Entrada invalida");
         }
-    
+
         scanner.close();
     }
 }
