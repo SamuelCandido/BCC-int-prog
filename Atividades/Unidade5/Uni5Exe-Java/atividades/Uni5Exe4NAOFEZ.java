@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Uni5Exe4 {
+public class Uni5Exe4NAOFEZ {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
