@@ -12,6 +12,8 @@ public class Uni5Exe6 {
         double altura = 0.0;
 
         for (int i = 1; i <= pessoa; i++) {
+            System.out.println();
+            System.out.println("Escreva a altura da pessoa numero " + i);
             altura = scanner.nextDouble();
             soma += altura;
             media = soma / pessoa;
