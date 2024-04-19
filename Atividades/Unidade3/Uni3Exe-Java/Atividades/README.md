@@ -3,6 +3,10 @@
 ## Enunciados das lista das atividades feitas em java em sala de aula
 ----------
 
+Implemente uma classe com o método main para cada um dos seguintes exercícios utilizando o VSCode. Faça a análise do problema identificando as entradas, saídas e testes. Utilize somente os comandos que você aprendeu na disciplina até o momento para a resolução das atividades.  
+
+----------
+
 ## Uni3Exe01.java
 
 Uma imobiliária vende apenas terrenos retangulares. Faça um programa para ler as dimensões de um terreno e depois exibir a área do terreno.  
