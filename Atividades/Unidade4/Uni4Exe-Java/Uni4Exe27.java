@@ -33,7 +33,6 @@ public class Uni4Exe27 {
 
         //Verifica se os minutos para cobrar hora completa
         if (mPermanencia <= 29 && hPermanencia != 0) {
-            System.out.println("pssou no 1 if");
             if (hPermanencia >= 1 && hPermanencia <= 2) {
                 calculo =  hPermanencia * 5;
                     System.out.println("Você ficou estacionado por " + hPermanencia + "h:" + mPermanencia + "m vai pagar R$" + calculo);
