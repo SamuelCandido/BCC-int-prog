@@ -7,7 +7,6 @@ public class Uni5Exe7 {
         System.out.println("Quantantos numeros você quer escrever");
         int qtd = scanner.nextInt();
 
-        double soma = 0.0;
         double media = 0.0;
         double numero = 0.0;
 
