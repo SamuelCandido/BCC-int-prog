@@ -5,15 +5,15 @@ public class Uni4Exe5 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("A cor é azul?");
-        boolean resp = scanner.nextBoolean();
+        boolean saida = scanner.nextBoolean();
         
 
-        if (resp == true){
-            System.out.println("Sim");
+        if (saida == true){
+            System.out.println("Sim é azul");
         }
         
         else{
-            System.out.println("Não");
+            System.out.println("Não oque você digitou não é azul");
         }
 
         scanner.close();
