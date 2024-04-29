@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Uni5Exe7 {
+public class Uni5Exe8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -10,8 +10,9 @@ public class Uni5Exe7 {
         double tempPositivo = 0.0;
         double tempNegativo = 0.0;
         double numero = 0.0;
-        double maior = 0.0;
+        double soma = 0.0;
         double menor = 0.0;
+        int cont = 0;
 
         for (int i = 1; i <= qtd; i++) {
             System.out.println();
@@ -20,7 +21,8 @@ public class Uni5Exe7 {
             if (numero >= 0) {
                 if (tempPositivo < numero) {
                     tempPositivo = numero;
-                    maior = numero;
+                    cont +=  1;
+                    soma += numero;
                 }
             }
             else{
@@ -32,8 +34,8 @@ public class Uni5Exe7 {
 
         }
         System.out.println();
-        System.out.println("Menor numero: " + menor);
-        System.out.println("Maior numero: " + maior);
+        System.out.println("Menor numero negativo: " + menor);
+        System.out.println("Media dos numeros positivo: " + (soma/cont));
 
         scanner.close();
     }
