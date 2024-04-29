@@ -1,7 +1,5 @@
 # Introdução à Programação - Unidade 5
 
-Algumas anotações feitas em aula: [aulaAnotacoes.md](./aulaAnotacoes.md "aulaAnotacoes.md")
-
 ## Comandos de Controle de Fluxo: Repetição
 
 ### [Videoaula_5_1 (27:57)](<https://furb-my.sharepoint.com/:v:/g/personal/dalton_furb_br/Ef5OfUf2PpBGjvq58tiSwS4BIheBeuTITeNlwfl-Wbxsaw?e=zXf9KK> "link alternativo da primeira videoaula da unidade 5")  
