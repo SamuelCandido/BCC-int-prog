@@ -7,18 +7,33 @@ public class Uni5Exe7 {
         System.out.println("Quantantos numeros você quer escrever");
         int qtd = scanner.nextInt();
 
-        double media = 0.0;
+        double tempPositivo = 0.0;
+        double tempNegativo = 0.0;
         double numero = 0.0;
+        double maior = 0.0;
+        double menor = 0.0;
 
         for (int i = 1; i <= qtd; i++) {
             System.out.println();
-            System.out.println("Escreva a altura da pessoa numero " + i);
+            System.out.println(i + ") Escreva um numero");
             numero = scanner.nextDouble();
-            //Vai precisar de lista
+            if (numero >= 0) {
+                if (tempPositivo < numero) {
+                    tempPositivo = numero;
+                    maior = numero;
+                }
+            }
+            else{
+                if (tempNegativo > numero) {
+                    tempNegativo = numero;
+                    menor = numero;
+                }
+            }
 
         }
-
-        System.out.println("A media é " + media);
+        System.out.println();
+        System.out.println("Menor numero: " + menor);
+        System.out.println("Maior numero: " + maior);
 
         scanner.close();
     }
