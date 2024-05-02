@@ -1,4 +1,4 @@
-public class Uni5Exe10 {
+public class Uni5Exe10NAOFEZ {
     public static void main(String[] args) {
 
         int num1 = 30;
@@ -7,8 +7,6 @@ public class Uni5Exe10 {
         int total;
         int elevado;
         int cont = 1;
-
-        
 
         for (int i = 1; cont <= 30; i++) {
             
