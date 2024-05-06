@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Uni5Exe3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+
+        System.out.println("Digite a quantidade de termos usadas");
         int termos = scanner.nextInt();
         double soma = 0.0;
 
