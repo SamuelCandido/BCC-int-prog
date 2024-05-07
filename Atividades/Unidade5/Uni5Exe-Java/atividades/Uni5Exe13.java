@@ -7,7 +7,7 @@ public class Uni5Exe13 {
         System.out.println("Digite o km atual:");
         int kmAtual = scanner.nextInt();
 
-        System.out.println("Quantas qtdPardaas fez:");
+        System.out.println("Quantas qtdPardas fez:");
         int qtdParda = scanner.nextInt();
         int mKM = 0;
         int mL2 = 0;
@@ -17,7 +17,7 @@ public class Uni5Exe13 {
 
         for (int i = 1; i <= qtdParda; i++){
 
-            System.out.println("Quantos litros encheu nessa pardaa?");
+            System.out.println("Quantos litros encheu nessa parada?");
             int litro = scanner.nextInt();
     
             System.out.println("Qual a KM no hodometro?");
@@ -29,7 +29,7 @@ public class Uni5Exe13 {
             mL2 += litro;
 
             double qntpara = k/litro;
-            System.out.println("qnt de km por litro nessa qtdPardaa = " + qntpara + "km/l");
+            System.out.println("qnt de km por litro nessa qtdParda = " + qntpara + "km/l");
 
 
         }

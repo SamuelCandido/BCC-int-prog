@@ -5,7 +5,7 @@ public class Uni5Exe5 {
         double x = 0;
         int n = 3;
 
-        for (int cont = 0; cont <= n; cont++){
+        for (int i = 0; i <= n; i++){
             System.out.println(y);
             x = y+2;
             System.out.println(x);
