@@ -29,7 +29,7 @@ public class Uni5Exe13 {
             mL2 += litro;
 
             double qntpara = k/litro;
-            System.out.println("qnt de km por litro nessa qtdParda = " + qntpara + "km/l");
+            System.out.println("qnt de km por litro nessa qtdParada = " + qntpara + "km/l");
 
 
         }
