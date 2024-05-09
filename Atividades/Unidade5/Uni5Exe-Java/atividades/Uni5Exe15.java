@@ -9,16 +9,19 @@ public class Uni5Exe15 {
         double media = 0;
         String nome = "";
         String stop = "fim";
-        int cont = 0;
+        int cont = 1;
 
         // equalsIgnoreCase compara ignorando case e o ! antes serve pra dizer que é diferente
         // vai dar errado mas é apenas pra saber usar o equals, o certo é usar um if pra dar um break
         // pq assim ele n vai pedir as notas
+
+        System.out.println();
+        System.out.println("Digite o nome do " + cont  + " aluno");
+        nome = scanner.next();
+
+
         while (!nome.equalsIgnoreCase(stop)) {
             cont += 1;
-            System.out.println();
-            System.out.println("Digite o nome do " + cont  + " aluno");
-            nome = scanner.next();
             
             System.out.println();
             System.out.println("Digite o valor da primeira nota");
@@ -34,6 +37,11 @@ public class Uni5Exe15 {
             System.out.println("O aluno: " + nome + " obteve uma media de: " + media );
             System.out.println();
             System.out.println("#########################");
+
+
+            System.out.println();
+            System.out.println("Digite o nome do " + cont  + " aluno");
+            nome = scanner.next();
 
         }
        
