@@ -10,7 +10,7 @@ public class Uni5Exe19 {
         
         while (true) {
         
-            System.out.println("Digite o valor da compra: ");
+            System.out.print("Digite o valor da compra: ");
             double vCompra = scanner.nextDouble();
 
             if (vCompra == 0) {
