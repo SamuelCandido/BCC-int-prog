@@ -31,7 +31,7 @@ public class Uni5Exe16 {
 
             System.out.println();
             System.out.println("Digite a altura da "+ cont +" pessoa: ");
-            double altura = scanner.nextInt();
+            double altura = scanner.nextDouble();
             if (genero == "0") {
                 break;
             }
