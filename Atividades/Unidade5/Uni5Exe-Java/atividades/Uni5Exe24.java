@@ -7,6 +7,7 @@ public class Uni5Exe24 {
         System.out.print("Digite o limite de peso dos peixes: ");
         double limite = scanner.nextDouble();
         double totalPeixe = 0;
+        double peixe = 0;
 
         String resposta;
         do {
@@ -14,15 +15,19 @@ public class Uni5Exe24 {
             System.out.print("Deseja informar o peso de mais um peixe (s/n)?: ");
             resposta = scanner.next();
 
-            if (resposta.equalsIgnoreCase("SIM")) {
+            if (resposta.equalsIgnoreCase("S") && peixe <= limite) {
                 System.out.println();
                 System.out.print("Digite o peso do peixe: ");
 
-                double peixe = scanner.nextDouble();
+                peixe = scanner.nextDouble();
                 totalPeixe += peixe;
                 System.out.println("Peso total dos peixes apos o ultimo peixe: " + totalPeixe);
             }
-        } while (resposta .equalsIgnoreCase("SIM"));
+            else if (peixe >= limite) {
+                
+            }
+        } 
+        while (resposta .equalsIgnoreCase("S"));
 
 
         if (totalPeixe >= limite) {
