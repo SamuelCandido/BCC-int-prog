@@ -53,9 +53,6 @@ public class Uni5Exe18 {
         }
 
 
-        System.out.println();
-        System.out.println(canalA + "A  " + canalB + "B" + totalP +" totaP");
-
         //Pelo menos um dos lados da divisão tem que ser double pois o resultado é double
         // Dividir por inteiros não tem como reultar em algo flutuante, isto significa 
         // Uma divisão truncada
@@ -63,7 +60,6 @@ public class Uni5Exe18 {
         resultadoB = (canalB / totalP) * 100;
         resultadoC = (canalC / totalP) * 100;
         resultadoD = (canalD / totalP) * 100;
-
 
         System.out.println();
         System.out.println(resultadoA + "% das pessoas veem o canal 4");
