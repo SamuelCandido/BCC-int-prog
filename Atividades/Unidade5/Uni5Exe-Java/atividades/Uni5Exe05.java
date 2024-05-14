@@ -1,4 +1,4 @@
-public class Uni5Exe5 {
+public class Uni5Exe05 {
     public static void main(String[] args){
         
         double y = 8;

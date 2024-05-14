@@ -1,4 +1,4 @@
-public class Uni5Exe4 {
+public class Uni5Exe04 {
     public static void main(String[] args){
         double soma = 0;
         double y = 3;
