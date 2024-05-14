@@ -5,7 +5,6 @@ public class Uni5Exe27 {
         Scanner scanner = new Scanner(System.in);
         
         double aux = 0.0;
-        double soma = 0.0;
         double total = 0;
         int producao = 0;
         int manha = 0;
