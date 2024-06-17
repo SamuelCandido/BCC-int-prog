@@ -85,7 +85,7 @@ public class batalhaNaval {
             }
         
             cont++;
-        } while (cont <= 2 && jogo == false);
+        } while (cont <= 30 && jogo == false);
 
         if (naviosAchados < 10){
             naviosRestantes = 10 - naviosAchados;
