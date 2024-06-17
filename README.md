@@ -10,7 +10,7 @@ Olá, seja bem vindo .. 😁
 
 Este é o principal material da disciplina de Introdução à Programação, e ele está sendo disponibilizado no GitHub. O conteúdo está dividido em 6 (seis) unidades (pastas), seguindo o proposto no plano de ensino. Cada unidade tem um texto de apoio e suas respectivas videoaulas, atividades, e ainda, várias anotações feitas em aula.
 
-Ao decorrer mais próximo do final do cronograma teremos a pasta [TrabalhoFinal](../Trabalhos/TrabalhoFinal "TrabalhoFinal") Que mostrá o trabalho que foi feito.
+Ao decorrer mais próximo do final do cronograma teremos a pasta [Trabalho Final](./Trabalhos "Trabalho final") Que mostrá o trabalho que foi feito.
 
 ## Atenção  
 
