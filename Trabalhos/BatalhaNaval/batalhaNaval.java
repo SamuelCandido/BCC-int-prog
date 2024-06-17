@@ -39,6 +39,7 @@ public class batalhaNaval {
         }
 
         do {
+            
             System.out.println();
             System.out.println("Tabuleiro:");
             System.out.print("  ");
@@ -78,6 +79,7 @@ public class batalhaNaval {
             } else {
                 System.out.println("");
                 tabuMostra[linha][coluna] = 'O';
+                System.out.println("Voce errou, tiro na agua");
             }
             if (naviosAchados == 10){
                 System.out.println("Você venceu");
@@ -85,7 +87,7 @@ public class batalhaNaval {
             }
         
             cont++;
-        } while (cont <= 30 && jogo == false);
+        } while (cont < 30 && jogo == false);
 
         if (naviosAchados < 10){
             naviosRestantes = 10 - naviosAchados;
