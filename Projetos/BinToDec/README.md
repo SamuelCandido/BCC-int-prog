@@ -11,5 +11,4 @@ Este desafio exige que o desenvolvedor que o implemente siga estas restrições:
 
 - [x] Usuário pode inserir quantos dígitos binários quiser em um campo de entrada
 - [x] Usuário deve ser notificado se qualquer coisa diferente de 0 ou 1 for inserida
-- [ ] Usuário vê os resultados em um único campo de saída contendo o equivalente decimal (base 10) do número binário que foi inserido
 
