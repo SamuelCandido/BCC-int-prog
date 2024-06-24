@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Tarefa {
-    String titulo;
-    String corpo;
-    boolean concluida;
+    static String titulo;
+    static String corpo;
+    static boolean concluida;
 
     Tarefa(String titulo, String corpo) {
         this.titulo = titulo;
@@ -15,7 +15,7 @@ public class Tarefa {
         this.concluida = false;
     }
 
-    public class GerenciaTarefa {
+    public static class GerenciaTarefa {
         private List<Tarefa> tarefas;
         private Scanner scanner;
     
@@ -23,7 +23,7 @@ public class Tarefa {
             this.tarefas = new ArrayList<>();
             this.scanner = new Scanner(System.in);
         }
-    
+
         public static void main(String[] args) {
             GerenciaTarefa gerenciaTarefa = new GerenciaTarefa();
             gerenciaTarefa.run();
@@ -38,7 +38,10 @@ public class Tarefa {
     
                 switch (respostaMenu) {
                     case 1:
-                        inserirTitulo();
+                        inserirTitulo(titulo, scanner);
+                        Tarefa tarefa = new Tarefa(titulo, corpo);
+                        tarefas.add(tarefa);
+                        System.out.println("Título inserido com sucesso!");
                         break;
 
                     case 2:
@@ -66,6 +69,7 @@ public class Tarefa {
                         break;
 
                     default:
+                        System.out.println();
                         System.out.println("Opção inválida!");
                         break;
                 }
@@ -73,7 +77,7 @@ public class Tarefa {
         }
     }
 
-    public void menu(){
+    public static void menu(){
         System.out.println("######## Escolha uma opçao #######");
         System.out.println("#   0- sair do programa          #");
         System.out.println("#   1- criar titulo              #");
@@ -82,29 +86,33 @@ public class Tarefa {
         System.out.println("#   4- excluir corpo             #");
         System.out.println("#   5- Listar tarefas (titulos)  #");
         System.out.println("#   6- Listar tarefas (total)    #");
+        System.out.println("##################################");
+        System.out.println();
     }
 
-    public void inserirTitulo() {
+    public static void inserirTitulo(String titulo, Scanner scanner) {
+        System.out.print("Digite o titulo da tarefa: ");
+        titulo = scanner.nextLine();
         
     }
     
-    public void excluirTitulo() {
+    public static void excluirTitulo() {
         
     }
 
-    public void inserirCorpo() {
+    public static void inserirCorpo() {
         
     }
 
-    public void excluirCorpo() {
+    public static void excluirCorpo() {
         
     }
 
-    public void listarTitulo() {
+    public static void listarTitulo() {
         
     }
 
-    public void listarTudo() {
+    public static void listarTudo() {
         
     }
 
