@@ -2,13 +2,66 @@ package Projetos.GerenciaTarefas;
 
 import java.util.Scanner;
 
-public class GerenciaTarefa {
-    public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        String titulo;
-        String corpo;
-        boolean concluida;
-        int respostaMenu;
+public class Tarefa {
+    String titulo;
+    String corpo;
+    boolean concluida;
+
+    Tarefa(String titulo, String corpo) {
+        this.titulo = titulo;
+        this.corpo = corpo;
+        this.concluida = false;
+    }
+
+    public class GerenciaTarefa {
+        private List<Tarefa> tarefas;
+        private Scanner scanner;
+    
+        public GerenciaTarefa() {
+            this.tarefas = new ArrayList<>();
+            this.scanner = new Scanner(System.in);
+        }
+    
+        public static void main(String[] args) {
+            GerenciaTarefa gerenciaTarefa = new GerenciaTarefa();
+            gerenciaTarefa.run();
+        }
+    
+        public void run() {
+            int respostaMenu;
+            do {
+                menu();
+                respostaMenu = scanner.nextInt();
+                scanner.nextLine(); 
+    
+                switch (respostaMenu) {
+                    case 1:
+                        inserirTitulo();
+                        break;
+                    case 2:
+                        inserirCorpo();
+                        break;
+                    case 3:
+                        excluirTitulo();
+                        break;
+                    case 4:
+                        excluirCorpo();
+                        break;
+                    case 5:
+                        listarTitulos();
+                        break;
+                    case 6:
+                        listarTarefas();
+                        break;
+                    case 0:
+                        System.out.println("Saindo do programa...");
+                        break;
+                    default:
+                        System.out.println("Opção inválida!");
+                        break;
+                }
+            } while (respostaMenu != 0);
+        }
     }
 
     public void menu(){
@@ -22,40 +75,9 @@ public class GerenciaTarefa {
         System.out.println("#   6- Listar tarefas (total)    #");
     }
 
-    public void Tarefa(String[] args, Scanner scanner, int respostaMenu) {
-        do {
-            menu();
-            respostaMenu = scanner.nextInt();
 
-            switch (respostaMenu) {
-                case 1:
-                    
-                    break;
-
-                case 2:
-                    
-                    break;
-
-                case 3:
-                    
-                    break;
-
-                case 4:
-                    
-                    break;
-
-                case 5:
-                    
-                    break;
-
-                case 6:
-                    
-                    break;
-                 
-                default:
-                    break;
-            }
-        } while (respostaMenu != 0);
+    public void gerenciaTarefa() {
+        
     }
 
     public void inserirTitulo() {
